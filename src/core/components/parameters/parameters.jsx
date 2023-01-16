@@ -126,7 +126,9 @@ export default class Parameters extends Component {
     const groupedParametersArr = Object.values(parameters
       .reduce((acc, x) => {
         const key = x.get("in")
-        acc[key] ??= []
+        if (!acc[key]) {
+          acc[key] = []
+        }
         acc[key].push(x)
         return acc
       }, {}))

@@ -25,7 +25,7 @@
   "config": {
     "$remove": true
   },
-  "name": "swagger-ui-react",
+  "name": "@heliosphere/swagger-ui-react",
   "main": "commonjs.js",
   "module": "index.js",
   "exports": {
@@ -35,7 +35,7 @@
       "require": "./commonjs.js"
     }
   },
-  "repository": "git@github.com:swagger-api/swagger-ui.git",
+  "repository": "git@github.com:helios/swagger-ui.git",
   "contributors": [
     "(in alphabetical order)",
     "Anna Bodnia <anna.bodnia@gmail.com>",

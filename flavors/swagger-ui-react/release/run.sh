@@ -23,6 +23,7 @@ node create-manifest.js > ../dist/package.json
 
 # Copy our README into the dist folder for npm
 cp ../README.md ../dist
+cp ../index.d.ts ../dist
 
 # Copy LICENSE & NOTICE into the dist folder for npm
 cp ../../../LICENSE ../dist
@@ -31,8 +32,4 @@ cp ../../../NOTICE ../dist
 # Run the release from the dist folder
 cd ../dist
 
-if [ "$PUBLISH_FLAVOR_REACT" = "true" ] ; then
-  npm publish .
-else
-  npm pack .
-fi
+npm publish
